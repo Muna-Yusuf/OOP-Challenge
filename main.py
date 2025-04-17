@@ -1,15 +1,28 @@
 from pet import Pet
 
-# Create a pet
-my_pet = Pet("Buddy")
+# Test all methods step by step
+my_pet = Pet("KOKO")
 
-# Interact with the pet
+print("Initial status:")
+my_pet.get_status()
+print()
+
+print("After eating:")
 my_pet.eat()
+my_pet.get_status()
+print()
+
+print("After sleeping:")
 my_pet.sleep()
+my_pet.get_status()
+print()
+
+print("After playing:")
 my_pet.play()
+my_pet.get_status()
+print()
+
+print("Training tricks:")
 my_pet.train("sit")
 my_pet.train("roll over")
-
-# Display status and tricks
-my_pet.get_status()
 my_pet.show_tricks()
