@@ -1,28 +1,18 @@
 from pet import Pet
 
-# Test all methods step by step
-my_pet = Pet("KOKO")
+print("Creating pet: Max")
+my_pet = Pet("Max")
 
-print("Initial status:")
-my_pet.get_status()
-print()
-
-print("After eating:")
+print(f"{my_pet.name} is eating...")
 my_pet.eat()
-my_pet.get_status()
-print()
 
-print("After sleeping:")
-my_pet.sleep()
-my_pet.get_status()
-print()
-
-print("After playing:")
+print(f"{my_pet.name} is playing...")
 my_pet.play()
-my_pet.get_status()
-print()
 
-print("Training tricks:")
-my_pet.train("sit")
+print(f"{my_pet.name} is sleeping...")
+my_pet.sleep()
+
 my_pet.train("roll over")
-my_pet.show_tricks()
+my_pet.train("play dead")
+
+my_pet.get_status()
